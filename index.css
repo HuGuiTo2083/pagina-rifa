@@ -154,7 +154,7 @@ button {
   transition: 0.5s;
 }
 
-button:hover::after {
+/* button:hover::after {
   content: "";
   width: 30px;
   height: 200px;
@@ -166,7 +166,7 @@ button:hover::after {
   opacity: 0.5;
 
 
-}
+} */
 
 @keyframes test {
   0% {
