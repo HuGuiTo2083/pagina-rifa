@@ -38,7 +38,7 @@
 // });
 
 buttonLogin.addEventListener('click', () => {
-    fetch('https://pagina-rifa.onrender.com/admin.html/updateTicket', {
+    fetch('https://pagina-rifa.onrender.com/updateTicket', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
