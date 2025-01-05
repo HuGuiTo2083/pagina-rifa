@@ -2,15 +2,15 @@
   "tickets": [
     {
       "ticket": "0001",
-      "available": false
+      "available": true
     },
     {
       "ticket": "0002",
-      "available": false
+      "available": true
     },
     {
       "ticket": "0003",
-      "available": false
+      "available": true
     },
     {
       "ticket": "0004",
@@ -38,7 +38,7 @@
     },
     {
       "ticket": "0010",
-      "available": false
+      "available": true
     },
     {
       "ticket": "0011",
