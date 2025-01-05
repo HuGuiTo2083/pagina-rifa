@@ -16,3 +16,5 @@ for (let i = 0; i < particleCount; i++) {
   
 }
 
+console.log("this is a test")
+

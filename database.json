@@ -6,11 +6,11 @@
     },
     {
       "ticket": "0002",
-      "available": true
+      "available": false
     },
     {
       "ticket": "0003",
-      "available": true
+      "available": false
     },
     {
       "ticket": "0004",
@@ -38,7 +38,7 @@
     },
     {
       "ticket": "0010",
-      "available": true
+      "available": false
     },
     {
       "ticket": "0011",
