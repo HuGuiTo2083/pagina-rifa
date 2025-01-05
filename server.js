@@ -6,6 +6,7 @@ const cors = require('cors');
 // Habilitar CORS y JSON parsing
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Servir archivos estáticos (tu HTML, CSS, JS)
 app.use(express.static('./'));
@@ -53,6 +54,8 @@ app.post('/updateTicket', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Servidor corriendo en http://localhost:3000');
+// Configuración del puerto
+const port = process.env.PORT || 3000;
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Servidor corriendo en puerto ${port}`);
 });
