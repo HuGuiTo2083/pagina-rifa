@@ -1,10 +1,40 @@
 body {
 
-  background: linear-gradient(to right, rgb(190, 135, 223), rgb(119, 66, 150), rgb(106, 35, 147));
+  background: linear-gradient(to right, rgb(190, 135, 223), rgb(119, 66, 150), rgb(106, 35, 147), rgb(76, 22, 107));
+  background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+  
   margin: 0;
   overflow-x: hidden;
 }
 
+
+#btLogin{
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  border: solid white 7px;
+  border-radius: 2rem;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
+
+}
+
+label{
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 50px;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(255, 208, 1)
+}
+
+#btLogin:hover::after{
+  content: none;
+}
 
 .particles-container {
   position: relative;
@@ -13,9 +43,29 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 50px;
+  padding: 60px 0 50px 50px;
 
 }
+
+.not-available{
+background-color: black;
+color:black;
+
+
+}
+
+.no-hover{
+  height: 50px;
+}
+
+.no-hover:hover,
+.no-hover:hover::after {
+  background-color: black;  /* Remueve el cambio de fondo */
+  color: initial;  /* Remueve el cambio de texto */
+  cursor: auto;
+  content: none;  /* Elimina el contenido del pseudo-elemento */
+}
+
 
 .particle {
   position: absolute;
@@ -185,6 +235,15 @@ span {
 
   .particles-container{
     padding: 20px 8px 20px 8px;
+  }
+
+  #btLogin{
+    font-size: 15px;
+  }
+  label{
+    font-size: 15px;
+    margin-left: 10px;
+
   }
 
 }
